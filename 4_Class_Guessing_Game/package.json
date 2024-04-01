@@ -1,0 +1,24 @@
+{
+  "name": "@shoaib_4rahmed/_guessing_game",
+  "version": "1.0.4",
+  "description": "I going to create simple number guessing game.",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "bin": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shoaib",
+  "license": "MIT",
+  "keywords": [],
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.11.30"
+  },
+  "dependencies": {
+    "inquirer": "^9.2.16"
+  }
+}
