@@ -1,11 +1,12 @@
 #! /usr/bin/env node
 import inquirer from "inquirer"
 
+// Read, Update, Delete, Add.
 
 let store = [];
-let condition = true;
+let condition = true; // loop sirf tru ya false value leta hai isliye hamne aik boolean value verible mein store krwa kar dey di is loop ko chlany ke liye..
 
-while(condition)
+while(condition) // is value ko true samjha jaega...
 {
 let todoApp = await inquirer.prompt([
     {
@@ -18,14 +19,17 @@ let todoApp = await inquirer.prompt([
         name: "addmore",
         message: "Do you want to add more ?",
         type: "confirm",
-        default: "false"
-    }
+        default: "true"
+    },
+
     ])
 
     store.push(todoApp.add);
     condition = todoApp.addmore;
     console.log(store);
-}
+};
+
+
 
 
 // NOTES..
@@ -35,7 +39,11 @@ let todoApp = await inquirer.prompt([
 
 // type: "confirm"
 // is type se ye hoga inquirer hamse jo bhi input lega ya to wo Yes mein hoga ya No mein
-// or jab bhi ham (type: "confirm") ye type use karte hain tab hame (default: "false") ye lazim lgana parta hai.
+// or jab bhi ham (type: "confirm") ye type use karte hain tab hame (default: "false") ye lazim lgana parta hai warna
+// loop nahi rukega (no) karne se bhi..
+
+// (default: "false") or dosra is type ko lgane ka faida ye bhi hai ke agr user Yes or No mein kuch input nahi deta
+// to is default value mein jo type hai wahi automaticly consider ho jaegi....
 
 // while loop
 // agr ham chahty hain aik hi question bar bar pocha jaye to uske liye hain while loop ka istmal karenge.

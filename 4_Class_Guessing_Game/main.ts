@@ -12,7 +12,7 @@ import inquirer from "inquirer";
 
 
 const randomNumber = Math.floor(Math.random() * 6 + 1);
-console.log(randomNumber);
+// console.log(randomNumber);
 
 
 const answer = await inquirer.prompt([

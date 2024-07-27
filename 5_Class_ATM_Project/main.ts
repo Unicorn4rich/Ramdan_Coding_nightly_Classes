@@ -101,3 +101,60 @@ else{
     console.log("incorrect pin number")
 }
 
+
+
+
+
+
+
+// <------------------------------------------End---------------------------------------------->
+// Old version...
+
+// if (amountDraw.past === "select fast_Cash ?"){
+//     let display = await inquirer.prompt([
+//         {
+//             name: "vew",
+//             message: "please select amount option to withdraw",
+//             type: "list",
+//             choices: ["5000", "10000", "15000", "20000"]
+//         }
+//     ])
+
+//      if (display.vew === "5000"){
+//             myBalance -= display.vew
+//             console.log(`Your remaining balance is: ${myBalance}`)
+//         }
+//         else if(display.vew === "10000"){
+//             myBalance -= display.vew
+//             console.log(`Your remaining balance is: ${myBalance}`)
+//         }
+//         else if(display.vew === "15000"){
+//             myBalance -= display.vew
+//             console.log(`Your remaining balance is: ${myBalance}`)
+//         }
+//         else if(display.vew === "20000"){
+//             myBalance -= display.vew
+//             console.log(`insaficiant balance please recharge`)
+//         }
+
+
+// <------------------------------------------End---------------------------------------------->
+// New version...
+
+// if(amountDraw.past === "select fast_Cash ?"){
+//     let display = await conecter.prompt(
+//         {
+//             name: "vew",
+//             message: "Please Select amount option to withdraw",
+//             type: "list",
+//             choices: ["5000", "10000", "15000", "20000"]
+//         }
+//     )
+
+//     if (display.vew  <= myBalance){
+//         myBalance -= display.vew;
+//         console.log(`your remaining balance is: ${ myBalance}`)
+//     }
+//     else{
+//         console.log("insuficiant Balance:")
+//     }
